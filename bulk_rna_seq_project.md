@@ -530,17 +530,23 @@ max(range) ; names(which.max(range))
 ## 17. Creating a barplot using samples totals
 
 ``` r
+##saving barplot as pdf
+pdf("barplot_counts.pdf",
+    width = 7,
+    height =5)
+
 ##recall that total counts has been stored as sample_sum
 barplot(sample_sum, 
         ylab = "count total", 
         xlab = "Samples",
         col = "lightblue",
         ylim = c(0, 1100))
-
 abline(h = 0, col = "black")
+dev.off()
 ```
 
-![](bulk_rna_seq_project_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+    ## png 
+    ##   2
 
 ## 18. Renaming Gene 2 to Gene 2A
 
