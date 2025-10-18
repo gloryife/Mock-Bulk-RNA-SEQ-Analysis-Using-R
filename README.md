@@ -1,4 +1,4 @@
-Bulk RNA-seq Expression Mini-Analysis (Healthy vs TB)
+# Bulk RNA-seq Expression Mini-Analysis (Healthy vs TB)
 
 
 1.	Inspect shape, row/col names of counts and str(samples).
